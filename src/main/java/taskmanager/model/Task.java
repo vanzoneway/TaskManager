@@ -1,6 +1,7 @@
 package taskmanager.model;
 
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -16,16 +17,20 @@ import java.time.LocalDateTime;
 public class Task {
 
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     private String title;
 
     private String description;
 
-    private LocalDateTime start_date;
+    @Column(name = "start_date")
+    private LocalDateTime startDate;
 
-    private LocalDateTime end_date;
+    @Column(name = "end_date")
+    private LocalDateTime endDate;
 
+    @JsonIgnore
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "employee_id")
     Employee employee;

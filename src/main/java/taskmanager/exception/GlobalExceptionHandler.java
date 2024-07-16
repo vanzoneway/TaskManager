@@ -9,7 +9,10 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 @ControllerAdvice
 public class GlobalExceptionHandler {
 
-    @ExceptionHandler({EmployeeAlreadyExistsException.class, EmployeeDoesntExistsException.class})
+    @ExceptionHandler({
+            EmployeeAlreadyExistsException.class,
+            EmployeeDoesntExistsException.class,
+    })
     public ResponseEntity<String> handleEmployeeAlreadyExistsException(Exception e) {
         return new ResponseEntity<>(e.getMessage(), HttpStatus.BAD_REQUEST);
     }
