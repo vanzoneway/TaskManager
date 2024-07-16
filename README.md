@@ -1,5 +1,7 @@
 # Application for creating users in database and give them various tasks
 
+A simple REST API application for adding, deleting, updating and retrieving user data and the ability to add tasks to them, delete tasks, view information about tasks and the like.
+
 ## Table of Contests
 
 - [Introduction](#introduction)
@@ -49,8 +51,13 @@ Note: You can initially run the database schema initialization script, which is 
 
 3. Build the project:
 
+For Linux:
 ```bash
-mvn clean install
+./mvnw clean install
+```
+For Windows:
+```bash
+mvnw.cmd clean install
 ```
 
 4. Run the application:
