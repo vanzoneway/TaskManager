@@ -46,7 +46,7 @@ This is a basic REST API application built using [Spring Boot](https://spring.io
    - Interface that inherits from JpaRepository<Task, Long>.
    - Provides methods for accessing data from the Task entity.
 
-4. Services
+### 4. Services
 
    EmployeeService:
    - Service that provides business logic for the Employee entity.
@@ -56,7 +56,7 @@ This is a basic REST API application built using [Spring Boot](https://spring.io
    - Service that provides business logic for the Task entity.
    - Includes methods for adding, deleting, updating, and retrieving tasks.
 
-5. Controllers
+### 5. Controllers
 
    EmployeeController:
    - Controller that provides REST API for managing employees.
@@ -66,7 +66,7 @@ This is a basic REST API application built using [Spring Boot](https://spring.io
    - Controller that provides REST API for managing tasks.
    - Includes methods for adding, deleting, updating, and retrieving tasks.
 
-Additional Requirements
+### Additional Requirements
 
     Use Spring Boot to create the application.
     Use Hibernate to work with the database.
@@ -74,7 +74,7 @@ Additional Requirements
     Use REST API for interaction with the application.
     Use best practices for software development.
 
-Resources:
+### Resources:
 
 - [Spring Boot Documentation](https://docs.spring.io/spring-boot/docs/current/reference/html/)
 - [Hibernate Documentation](https://docs.jboss.org/hibernate/orm/5.6/userguide/html_single/)
